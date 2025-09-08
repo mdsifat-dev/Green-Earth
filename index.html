@@ -31,7 +31,87 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body>
-    <h1 class="font-bold text-7xl">Hello my shop</h1>
+    <!-- header section  -->
+    <div class="navbar bg-[#15803D] flex items-center">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow flex-col-reverse"
+          >
+            <li><a href="" class="text-black text-sm">About</a></li>
+            <li><a href="" class="text-black text-sm">Gallery</a></li>
+            <li><a href="" class="text-black text-sm">Plant a Tree</a></li>
+          </ul>
+        </div>
+        <a>
+          <button
+            class="btn btn-ghost text-xl text-white hover:text-white hover:backdrop-brightness-100 hover:bg-green-700 md:ml-[136px] md:[text-shadow:1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000]"
+          >
+            <a href="">Green Earth</a>
+          </button></a
+        >
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="" class="text-white text-lg">About</a></li>
+          <li><a href="" class="text-white text-lg">Gallery</a></li>
+          <li><a href="" class="text-white text-lg">Plant a Tree</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <button
+          class="text-green-700 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900 md:mr-[136px]"
+        >
+          <a href="">Plant a Tree</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- Banner section starts here  -->
+    <section
+      class="banner-parent flex flex-col md:flex-row justify-between items-center bg-[#CFF0DC]"
+    >
+      <img
+        src="./assets/hero-leaf1.png"
+        alt="Leaf image"
+        class="hidden lg:block"
+      />
+      <div class="banner-description flex flex-col text-center mt-5">
+        <h1 class="text-2xl md:text-5xl font-bold mb-3">
+          Plant a Tree, Grow a Future
+        </h1>
+        <p class="text-[#1F2937] md:max-w-[580px] mb-6">
+          Join our mission to plant 1 million trees and make the Earth greener
+          for future generations.
+        </p>
+        <div>
+          <button
+            class="text-green-700 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-300 font-medium rounded-full text-lg px-1 py-2.5 dark:focus:ring-yellow-900 w-60"
+          >
+            <a href="">Get Involved</a>
+          </button>
+        </div>
+      </div>
+      <img src="./assets/hero-leaf2.png" alt="Leaf image" class="w-[50vh]" />
+    </section>
   </body>
 </html>
