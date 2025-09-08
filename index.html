@@ -12,6 +12,15 @@
       type="image/x-icon>"
     />
 
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Font integration -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,84 +43,162 @@
 
   <body>
     <!-- header section  -->
-    <div class="navbar bg-[#15803D] flex items-center">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <header>
+      <div class="navbar bg-[#15803D] flex items-center">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow flex-col-reverse"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+              <li><a href="" class="text-black text-sm">About</a></li>
+              <li><a href="" class="text-black text-sm">Gallery</a></li>
+              <li><a href="" class="text-black text-sm">Plant a Tree</a></li>
+            </ul>
           </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow flex-col-reverse"
+          <a href=""
+            ><img
+              src="./assets/heading-logo.png"
+              alt=""
+              class="w-10 md:ml-[136px]"
+          /></a>
+
+          <a>
+            <button
+              class="btn btn-ghost text-xl text-white hover:text-white hover:backdrop-brightness-100 hover:bg-green-700 md:[text-shadow:1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000]"
+            >
+              <a href="">Green Earth</a>
+            </button></a
           >
-            <li><a href="" class="text-black text-sm">About</a></li>
-            <li><a href="" class="text-black text-sm">Gallery</a></li>
-            <li><a href="" class="text-black text-sm">Plant a Tree</a></li>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="" class="text-white text-lg">About</a></li>
+            <li><a href="" class="text-white text-lg">Gallery</a></li>
+            <li><a href="" class="text-white text-lg">Plant a Tree</a></li>
           </ul>
         </div>
-        <a>
+        <div class="navbar-end">
           <button
-            class="btn btn-ghost text-xl text-white hover:text-white hover:backdrop-brightness-100 hover:bg-green-700 md:ml-[136px] md:[text-shadow:1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000]"
+            class="text-green-700 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900 md:mr-[136px]"
           >
-            <a href="">Green Earth</a>
-          </button></a
-        >
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a href="" class="text-white text-lg">About</a></li>
-          <li><a href="" class="text-white text-lg">Gallery</a></li>
-          <li><a href="" class="text-white text-lg">Plant a Tree</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <button
-          class="text-green-700 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900 md:mr-[136px]"
-        >
-          <a href="">Plant a Tree</a>
-        </button>
-      </div>
-    </div>
-
-    <!-- Banner section starts here  -->
-    <section
-      class="banner-parent flex flex-col md:flex-row justify-between items-center bg-[#CFF0DC]"
-    >
-      <img
-        src="./assets/hero-leaf1.png"
-        alt="Leaf image"
-        class="hidden lg:block"
-      />
-      <div class="banner-description flex flex-col text-center mt-5">
-        <h1 class="text-2xl md:text-5xl font-bold mb-3">
-          Plant a Tree, Grow a Future
-        </h1>
-        <p class="text-[#1F2937] md:max-w-[580px] mb-6">
-          Join our mission to plant 1 million trees and make the Earth greener
-          for future generations.
-        </p>
-        <div>
-          <button
-            class="text-green-700 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-300 font-medium rounded-full text-lg px-1 py-2.5 dark:focus:ring-yellow-900 w-60"
-          >
-            <a href="">Get Involved</a>
+            <a href="">Plant a Tree</a>
           </button>
         </div>
       </div>
-      <img src="./assets/hero-leaf2.png" alt="Leaf image" class="w-[50vh]" />
-    </section>
+
+      <!-- Banner section starts here  -->
+      <section
+        class="banner-parent flex flex-col md:flex-row justify-between items-center bg-[#CFF0DC]"
+      >
+        <img
+          src="./assets/hero-leaf1.png"
+          alt="Leaf image"
+          class="hidden lg:block"
+        />
+        <div class="banner-description flex flex-col text-center mt-5">
+          <h1 class="text-2xl md:text-5xl font-bold mb-3">
+            Plant a Tree, Grow a Future
+          </h1>
+          <p class="text-[#1F2937] md:max-w-[580px] mb-6">
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future generations.
+          </p>
+          <div>
+            <button
+              class="text-green-700 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-300 font-medium rounded-full text-lg px-1 py-2.5 dark:focus:ring-yellow-900 w-60 cursor-pointer"
+            >
+              <a href="">Get Involved</a>
+            </button>
+          </div>
+        </div>
+        <img
+          src="./assets/hero-leaf2.png"
+          alt="Leaf image"
+          class="w-[40vh] md:w-[546px] md:h-auto"
+        />
+      </section>
+    </header>
+
+    <!-- Main section starts here -->
+    <main class="bg-[#edfff4]">
+      <!-- Card Section  -->
+      <section id="plant_container" class="w-11/12 mx-auto py-[100px]">
+        <div id="spinner" class="mx-auto w-20 hidden">
+          <span class="loading loading-dots loading-xl"></span>
+        </div>
+        <h2 class="text-3xl font-bold text-center pb-10 pt-5">
+          Choose Your Trees
+        </h2>
+        <section class="grid md:grid-cols-12 gap-5">
+          <div class="md:grid-cols-1 md:col-span-2 mx-auto md:mx-0">
+            <h2
+              class="text-xl font-bold mb-5 md:border-0 border-b-2 border-gray-300 md:text-left text-center md:pb-0 pb-2"
+            >
+              Categories
+            </h2>
+            <ul
+              id="categorie_container"
+              class="space-y-2 flex flex-col justify-center md:text-left text-justify"
+            >
+              <li
+                onclick="allLoad()"
+                class="hover:bg-[#2b9b54] bg-[#15803D] text-white p-2 rounded-sm cursor-pointer"
+              >
+                All Trees
+              </li>
+            </ul>
+          </div>
+
+          <div
+            id="Platcard_Container"
+            class="grid md:grid-cols-3 grid-cols-1 gap-5 md:col-span-8 md:order-none order-2"
+          ></div>
+
+          <div class="bg-white md:grid-cols-1 md:col-span-2 p-4 rounded-lg">
+            <h2 class="text-xl font-bold md:text-left text-center">
+              Your Cart
+            </h2>
+            <div
+              id="cart_container"
+              class="border-b-2 border-gray-200 mt-2"
+            ></div>
+
+            <div id="total_PriceContainer"></div>
+          </div>
+        </section>
+        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+            <div id="modal_container"></div>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </section>
+    </main>
+
+    <!-- JS file  -->
+    <script src="./script/index.js"></script>
   </body>
 </html>
