@@ -1,3 +1,4 @@
+// Modal Container
 const categoriesContainer = document.getElementById("categorie_container");
 const plantContainer = document.getElementById("plant_container");
 const plantCardContainer = document.getElementById("Platcard_Container");
