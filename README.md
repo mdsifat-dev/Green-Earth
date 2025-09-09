@@ -57,9 +57,7 @@ const evens = [1, 2, 3, 4].filter((n) => n % 2 === 0);
 console.log(evens); // [2, 4]
 ```
 
-**first give explained answer then give short coding example**
-
-_3) What are arrow functions in ES6?_
+**3) What are arrow functions in ES6?**
 
 - Shorter syntax → No need to write function keyword.
 - Implicit return → If it’s a one-liner, you don’t need return or {}.
