@@ -1,11 +1,9 @@
-[Click me to visit my work 🚀](https://mdsifat-dev.github.io/Green-Earth/)
+##[Click me to visit my work 🚀](https://mdsifat-dev.github.io/Green-Earth/)
 
 **1) What is the difference between var, let, and const?**
 
 - var → Old way. Function-scoped. Can redeclare and reassign. Hoisted to the top.
-
 - let → Modern. Block-scoped. Can reassign but not redeclare in the same scope.
-
 - const → Modern. Block-scoped. Cannot redeclare or reassign, but objects/arrays can still be modified inside.
 
 ```js
@@ -64,9 +62,7 @@ console.log(evens); // [2, 4]
 _3) What are arrow functions in ES6?_
 
 - Shorter syntax → No need to write function keyword.
-
 - Implicit return → If it’s a one-liner, you don’t need return or {}.
-
 - 'this' binding → Unlike normal functions, arrow functions don’t have their own 'this'. They use 'this' from the surrounding scope (very useful in callbacks).
 
 ```js
@@ -94,11 +90,8 @@ greet(); // Hello!
 _Destructuring assignment in ES6 is a way to extract values from arrays or objects into separate variables in a clean and readable way._
 
 - Array destructuring → Assigns array elements to variables by position.
-
 - Object destructuring → Assigns object properties to variables by name.
-
 - Can set default values if the value is undefined.
-
 - Makes code shorter and avoids repetitive access like obj.prop or arr[0].
 
 ```js
@@ -126,15 +119,12 @@ console.log(personName); // Alice
 _Template literals are a new way to write strings in ES6 using backticks ` instead of quotes._
 
 - Embed variables easily using ${} instead of breaking strings and using +.
-
 - Multi-line strings are easy; no need for \n.
-
 - Expressions can be used inside ${} (not just variables).
 
 _Difference from string concatenation:_
 
 - Old way: "Hello " + name + ", you are " + age + " years old."
-
 - Template literal: `Hello ${name}, you are ${age} years old.` → cleaner and readable.
 
 ```js
