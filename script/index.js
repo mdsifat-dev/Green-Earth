@@ -99,7 +99,7 @@ const showPlantsCategories = (platsInfo) => {
          <h2 class="bg-[#CFF0DC] text-[#15803D] px-3 py-1 font-medium rounded-full">${plantInfo.category}</h2>
          <p class="font-bold"><span class="font-bold">৳</span><span id="tree_price">${plantInfo.price}</span></p>
          </div>
-           <button class="bg-[#15803D] text-white text-center w-full py-3 px-5 rounded-full cursor-pointer hover:opacity-70 ease-in-out duration-200 active:bg-green-800">Add to Cart</button>
+           <button class="bg-[#15803D] text-white text-center w-full py-3 px-5 rounded-full cursor-pointer hover:opacity-70 ease-in-out duration-200 active:bg-green-800 " >Add to Cart</button>
        </div>
     </div>
         `;
@@ -139,7 +139,7 @@ const showAddCart = (cartArray) => {
         <p class="text-[#8C8C8C]">৳<span>${cartItem.price}</span></p>
        </div>
        <div>
-        <i onclick="delteCart('${cartItem.id}')"  class=" cursor-pointer fa-solid fa-xmark" text-[#8C8C8C]"></i>
+        <i onclick="delteCart('${cartItem.id}')"  class=" cursor-pointer text-red-500 text-lg fa-solid fa-xmark "></i>
        </div>
  </div>
     `;
